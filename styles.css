@@ -1,0 +1,317 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+.header {
+    background-color: #0a3d62;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 15px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    z-index: 4;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Banner Principal */
+/* Banner Principal */
+.hero {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero-image {
+    background-image: url('https://lh5.googleusercontent.com/proxy/Q7xY5n1Za2jnb37UO8yFhX5wKl3nGqsv6qNFQ-3q7JMsXjLSc14EQyVCjaTDRAs4W9hHdclC3Y1KYuPE1VJ7BDGU8976nVdb4IkCGmoBwyYBRblgGLzjpY7Y3G5fgSDDKTTJbayIKSW6o6dx6zxZAj4wtMPoWggALhM7');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Altura del banner */
+    filter: blur(8px); /* Efecto de desenfoque */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Enviar la imagen al fondo */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Mantener el contenido por encima de la imagen */
+    padding: 60px 20px; /* Ajustar el padding según sea necesario */
+}
+
+
+.cta-button {
+    background-color: #f6b93b;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Servicios */
+.services {
+    z-index: 3;
+    position: relative;
+    padding: 40px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #0a3d62;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card button {
+    background-color: #f6b93b;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Catálogo */
+.catalog {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #3c6382;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product button {
+    background-color: #f6b93b;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Blog */
+.blog {
+    padding: 40px;
+    text-align: center;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.post {
+    background-color: #0a3d62;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.post a {
+    color: #f6b93b;
+    text-decoration: none;
+}
+
+/* Contacto */
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+.footer {
+    background-color: #0a3d62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Carrusel de Imágenes */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .service-cards, .product-cards, .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .product, .post {
+        width: 90%;
+    }
+
+    .nav ul {
+        display: none; /* Ocultar menú por defecto */
+        flex-direction: column;
+        background-color: #0a3d62;
+        position: absolute;
+        top: 70px; /* Ajustar según el tamaño del header */
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+       
+    }
+
+    .nav ul.active {
+        display: flex; /* Mostrar menú cuando sea necesario */
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar botón en dispositivos móviles */
+    }
+}
+
