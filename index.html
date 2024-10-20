@@ -1,188 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios e Insumos Médicos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Venta de Celulares</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Encabezado -->
-    <header class="header">
-        <div class="logo">
-            <h1>MedSupply</h1>
-        </div>
-        <button class="menu-toggle">☰</button>
-        <nav class="nav">
+    <header>
+        <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner Principal -->
-
-    <!-- Banner Principal -->
-    <section class="hero">
-        <div class="hero-image"></div>
-        <div class="hero-content">
-            <h2>Soluciones de calidad para el bienestar y la salud</h2>
-            <a href="#catalogo" class="cta-button">Ver catálogo</a>
+    <!-- Carrusel de imágenes -->
+    <section id="inicio" class="carousel">
+        <div class="carousel-container">
+            <img class="carousel-img active" src="Imagen de WhatsApp 2024-10-16 a las 16.21.37_cc84aaf1.jpg" alt="Celular 1">
+            <img class="carousel-img" src="Imagen de WhatsApp 2024-10-16 a las 16.21.54_3abb664e.jpg" alt="Celular 2">
+            <img class="carousel-img" src="Imagen de WhatsApp 2024-10-16 a las 16.22.24_9e807036.jpg" alt="Celular 3">
         </div>
-    </section>
-    <!-- Sección de Servicios -->
-    <section class="services" id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Venta de Insumos Médicos</h3>
-                <p>Ofrecemos una amplia variedad de insumos médicos de la más alta calidad.</p>
-                <button class="open-modal" data-modal="venta">Ver más</button>
-            </div>
-            <div class="card">
-                <h3>Alquiler de Equipos</h3>
-                <p>Equipos médicos de última tecnología para alquiler a corto y largo plazo.</p>
-                <button class="open-modal" data-modal="alquiler">Ver más</button>
-            </div>
-            <div class="card">
-                <h3>Consultoría en Salud</h3>
-                <p>Asesoría especializada para clínicas y hospitales.</p>
-                <button class="open-modal" data-modal="consultoria">Ver más</button>
-            </div>
+        <div class="carousel-buttons">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
         </div>
     </section>
 
-    <!-- Sección del Catálogo -->
-    <section class="catalog" id="catalogo">
+    <!-- Catálogo de productos -->
+    <section id="catalogo" class="catalogo">
         <h2>Catálogo de Productos</h2>
-        <div class="product-cards">
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Producto 1">
-                <h3>Guantes Quirúrgicos</h3>
-                <p>Guantes estériles de alta resistencia, aprobados por la FDA.</p>
-                <button class="open-modal" data-modal="producto1">Detalles</button>
+        <div class="productos">
+            <div class="producto">
+                <img src="celular1.jpg" alt="Celular Modelo 1">
+                <h3>Celular Modelo 1</h3>
+                <p>Precio: $5000 MXN</p>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Producto 2">
-                <h3>Mascarillas N95</h3>
-                <p>Mascarillas certificadas para máxima protección contra aerosoles.</p>
-                <button class="open-modal" data-modal="producto2">Detalles</button>
+            <div class="producto">
+                <img src="celular2.jpg" alt="Celular Modelo 2">
+                <h3>Celular Modelo 2</h3>
+                <p>Precio: $6000 MXN</p>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Producto 3">
-                <h3>Monitor de Signos Vitales</h3>
-                <p>Monitores de alta precisión para seguimiento continuo de pacientes.</p>
-                <button class="open-modal" data-modal="producto3">Detalles</button>
+            <div class="producto">
+                <img src="celular3.jpg" alt="Celular Modelo 3">
+                <h3>Celular Modelo 3</h3>
+                <p>Precio: $7000 MXN</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección del Blog -->
-    <section class="blog" id="blog">
-        <h2>Últimas Noticias</h2>
-        <div class="blog-posts">
-            <article class="post">
-                <h3>Innovaciones en insumos médicos 2024</h3>
-                <p>Descubre los últimos avances en tecnología médica.</p>
-                <a href="#">Leer más</a>
-            </article>
-            <article class="post">
-                <h3>Cómo elegir el equipo adecuado</h3>
-                <p>Consejos prácticos para seleccionar el mejor equipo médico.</p>
-                <a href="#">Leer más</a>
-            </article>
-        </div>
-    </section>
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Agenda una cita</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    <!-- Sección de Contacto -->
-    <section class="contact" id="contacto">
-        <h2>Contacto</h2>
-        <form action="#" class="contact-form">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <textarea placeholder="Escribe tu mensaje aquí" required></textarea>
+            <label for="nombre">Celular:</label>
+            <input type="text" id="celular" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nombre">Fecha:</label>
+            <input type="date" id="fecha" name="nombre" required>
+
+            <label for="sucursal">Nombre:</label>
+            <select name="" id="">
+                <option value="1">Plaza mi soluciones</option>
+                <option value="2">Plaza sentro sur</option>
+            </select>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
             <button type="submit">Enviar</button>
         </form>
     </section>
 
-    <!-- Pie de Página -->
-    <footer class="footer">
-        <p>&copy; 2024 MedSupply. Todos los derechos reservados.</p>
+    <footer>
+        <p>&copy; 2024 Venta de Celulares. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Ventanas Modales con Ficha Técnica y Carrusel -->
-    <div class="modal" id="producto1">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Guantes Quirúrgicos</h2>
-            <div class="carousel">
-                <img class="carousel-image active" src="https://via.placeholder.com/400x300" alt="Imagen 1">
-                <img class="carousel-image" src="https://via.placeholder.com/400x300" alt="Imagen 2">
-                <img class="carousel-image" src="https://via.placeholder.com/400x300" alt="Imagen 3">
-                <button class="carousel-control prev">⬅️</button>
-                <button class="carousel-control next">➡️</button>
-            </div>
-            <h3>Ficha Técnica</h3>
-            <ul>
-                <li>Material: Látex</li>
-                <li>Tamaño: Pequeño, Mediano, Grande</li>
-                <li>Certificación: FDA</li>
-                <li>Resistencia a roturas: Alta</li>
-                <li>Uso: Descartable</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="modal" id="producto2">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Mascarillas N95</h2>
-            <div class="carousel">
-                <img class="carousel-image active" src="https://via.placeholder.com/400x300" alt="Imagen 1">
-                <img class="carousel-image" src="https://via.placeholder.com/400x300" alt="Imagen 2">
-                <img class="carousel-image" src="https://via.placeholder.com/400x300" alt="Imagen 3">
-                <button class="carousel-control prev">⬅️</button>
-                <button class="carousel-control next">➡️</button>
-            </div>
-            <h3>Ficha Técnica</h3>
-            <ul>
-                <li>Material: Polipropileno</li>
-                <li>Filtración: 95% de partículas</li>
-                <li>Certificación: NIOSH</li>
-                <li>Durabilidad: 8 horas</li>
-                <li>Uso: Descartable</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="modal" id="producto3">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Monitor de Signos Vitales</h2>
-            <div class="carousel">
-                <img class="carousel-image active" src="https://via.placeholder.com/400x300" alt="Imagen 1">
-                <img class="carousel-image" src="https://via.placeholder.com/400x300" alt="Imagen 2">
-                <img class="carousel-image" src="https://via.placeholder.com/400x300" alt="Imagen 3">
-                <button class="carousel-control prev">⬅️</button>
-                <button class="carousel-control next">➡️</button>
-            </div>
-            <h3>Ficha Técnica</h3>
-            <ul>
-                <li>Monitor: Pantalla LCD de 15 pulgadas</li>
-                <li>Parámetros: Presión arterial, frecuencia cardíaca, oxígeno en sangre</li>
-                <li>Batería: 10 horas de autonomía</li>
-                <li>Certificación: CE</li>
-            </ul>
-        </div>
-    </div>
-
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
